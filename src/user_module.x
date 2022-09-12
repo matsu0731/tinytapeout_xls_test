@@ -3,7 +3,7 @@
 
 pub fn user_module(io_in: u8) -> u8 {
   for (i, c): (u8, u8) in u8:0..u8:8 {
-    c + ((n >> i) & u8:1)
+    c + ((io_in >> i) & u8:1)
   }(u8:0)
 
 }
